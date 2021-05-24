@@ -193,11 +193,11 @@ int __cdecl main(int argc, char* argv[])
 {
     bool bUseHairpinFix = false;
 
-    /* Output the DarkStar banner.. */
+    /* Output the banner.. */
     xiloader::console::output(xiloader::color::lightred, "==========================================================");
-    xiloader::console::output(xiloader::color::lightgreen, "DarkStar Boot Loader (c) 2015 DarkStar Team");
-    xiloader::console::output(xiloader::color::lightpurple, "Bug Reports: https://github.com/DarkstarProject/darkstar/issues");
-    xiloader::console::output(xiloader::color::lightpurple, "Git Repo   : https://github.com/DarkstarProject/darkstar");
+    xiloader::console::output(xiloader::color::lightgreen, "LandSandBoat Boot Loader (c) 2015 LandSandBoat Team");
+    xiloader::console::output(xiloader::color::lightpurple, "Bug Reports: https://github.com/LandSandBoat/xiloader/issues");
+    xiloader::console::output(xiloader::color::lightpurple, "Git Repo   : https://github.com/LandSandBoat/xiloader");
     xiloader::console::output(xiloader::color::lightred, "==========================================================");
 
     /* Initialize Winsock */
