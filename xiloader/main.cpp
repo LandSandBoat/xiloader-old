@@ -21,6 +21,8 @@ This file is part of DarkStar-server source code.
 ===========================================================================
 */
 
+#include <ctime>
+
 #include "defines.h"
 
 #include "console.h"
@@ -194,8 +196,10 @@ int __cdecl main(int argc, char* argv[])
     bool bUseHairpinFix = false;
 
     /* Output the banner.. */
+    time_t currentTime = time(NULL);
+    int currentYear = localtime(&currentTime)->tm_year + 1900;  // Year is returned as the number of years since 1900.
     xiloader::console::output(xiloader::color::lightred, "==========================================================");
-    xiloader::console::output(xiloader::color::lightgreen, "LandSandBoat Boot Loader (c) 2015 LandSandBoat Team");
+    xiloader::console::output(xiloader::color::lightgreen, "LandSandBoat Boot Loader (c) 2015-%d LandSandBoat Team", currentYear);
     xiloader::console::output(xiloader::color::lightpurple, "Bug Reports: https://github.com/LandSandBoat/xiloader/issues");
     xiloader::console::output(xiloader::color::lightpurple, "Git Repo   : https://github.com/LandSandBoat/xiloader");
     xiloader::console::output(xiloader::color::lightred, "==========================================================");
